@@ -4,13 +4,14 @@
   "description": "Redux TodoMVC example",
   "scripts": {
     "start": "node server.js",
+    "test": "npm-run-all -p -c 'test:*'",
     "test:components": "cross-env NODE_ENV=test mocha --recursive --compilers js:babel-register --require ./test/setup.js",
     "test:storybook": "eyes-storybook",
     "test:cypress": "npm-run-all -p cypress-run",
     "cypress-run": "cypress run",
     "cypress": "npm-run-all -p start cypress-open",
     "cypress-open": "cypress open",
-    "test": "npm-run-all -p -c 'test:*'",
+    "eyes-storybook": "eyes-storybook",
     "storybook": "start-storybook -p 9001"
   },
   "repository": {
