@@ -12,6 +12,7 @@ class Header extends Component {
     return (
       <header className="header">
           <h1>todos</h1>
+          {/* <h1 style={{color:'green'}}>todos</h1> */}
           <TodoTextInput newTodo
                          onSave={this.handleSave.bind(this)}
                          placeholder="What needs to be done?" />

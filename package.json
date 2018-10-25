@@ -9,7 +9,7 @@
     "test:storybook": "eyes-storybook",
     "test:cypress": "npm-run-all -p cypress-run",
     "cypress-run": "cypress run",
-    "cypress": "npm-run-all -p start cypress-open",
+    "eyes-cypress": "npm-run-all -p start cypress-open",
     "cypress-open": "cypress open",
     "eyes-storybook": "eyes-storybook",
     "storybook": "start-storybook -p 9001"

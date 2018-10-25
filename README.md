@@ -51,7 +51,7 @@ set APPLITOOLS_API_KEY=<your-api-key> # Windows
 Now run [Cypress](https://cypress.io).
 
 ```sh
-npm run cypress
+npm run eyes-cypress
 ```
 
 Then click on the single test in the Cypress window to run it.
