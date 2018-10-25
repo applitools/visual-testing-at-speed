@@ -1,5 +1,7 @@
 ## Simple React/Redux Todo App
 
+(forked from https://github.com/kadira-samples/react-storybook-demo)
+
 This app setup has the support for [React Storybook](https://github.com/kadirahq/react-storybook). It allows to develop and test React UI components rapidly.
 
 ### Usage
