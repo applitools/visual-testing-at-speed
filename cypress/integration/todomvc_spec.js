@@ -8,7 +8,7 @@ describe('TodoMVC - React', function () {
 
   before(function () {
     cy.visit('http://localhost:3000/')
-    cy.eyesOpen({batchName: 'visual-testing-at-speed cypress test'})
+    cy.eyesOpen({})
   })
 
   after(function () {
