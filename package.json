@@ -11,7 +11,7 @@
     "cypress-run": "cypress run",
     "eyes-cypress": "npm-run-all -p start cypress-open",
     "cypress-open": "cypress open",
-    "eyes-storybook": "eyes-storybook",
+    "eyes-storybook": "eyes-storybook --conf applitools.storybook.config.js",
     "storybook": "start-storybook -p 9001"
   },
   "repository": {
@@ -33,8 +33,8 @@
     "stack-source-map": "^1.0.4"
   },
   "devDependencies": {
-    "@applitools/eyes.cypress": "^3.2.12",
-    "@applitools/eyes.storybook": "^2.1.9",
+    "@applitools/eyes.cypress": "^3.2.19",
+    "@applitools/eyes.storybook": "^2.1.12",
     "@kadira/storybook": "^2.24.0",
     "@kadira/storybook-addon-comments": "^1.1.1",
     "@kadira/storybook-database-cloud": "^2.2.0",
