@@ -8,7 +8,7 @@ describe('TodoMVC - React', function () {
 
   before(function () {
     cy.visit('http://localhost:3000/')
-    cy.eyesOpen({})
+    cy.eyesOpen({testName: "Create and toggle Todo's"})
   })
 
   after(function () {
