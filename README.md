@@ -71,9 +71,21 @@ npm run eyes-storybook
 
 Then wait for the test to pass, and goto [Applitools Eyes Test manager](https://eyes.applitools.com) to see the results.
 
-![Eyes Cypress](.github/eyes-storybook-screenshot.png)
+![Eyes Storybook](.github/eyes-storybook-screenshot.png)
 
 ## Configuring more browsers to visually test
 
 Edit the file `applitools.config.js` and play around with the `browser` field
-to add or remove more browsers/browser widths.
+to add or remove more browsers/browser widths. (Storybook & Cypress only)
+
+## Visual Testing using Selenium WebDriver
+
+Run
+
+```sh
+npm run eyes-selenium
+```
+
+Then wait for the test to pass, and goto [Applitools Eyes Test manager](https://eyes.applitools.com) to see the results.
+
+![Eyes Selenium WebDriver](.github/eyes-selenium-screenshot.png)
