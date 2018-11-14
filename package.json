@@ -9,7 +9,7 @@
     "test:storybook": "eyes-storybook",
     "test:cypress": "npm-run-all -p cypress-run",
     "cypress-run": "cypress run",
-    "eyes-cypress": "npm-run-all -p start cypress-open",
+    "eyes-cypress": "npm-run-all -p -r start cypress-open",
     "eyes-selenium": "npm-run-all -p -r start mocha-selenium",
     "mocha-selenium": "mocha --no-timeouts --exit selenium/*.test.js",
     "cypress-open": "cypress open",
