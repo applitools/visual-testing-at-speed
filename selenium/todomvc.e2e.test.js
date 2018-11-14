@@ -19,7 +19,7 @@ describe('Applitools Hello App', function() {
     eyes = new Eyes()
     eyes.setApiKey(process.env.APPLITOOLS_API_KEY)
 
-    await eyes.open(driver, 'TodoMVC', 'TodoMVC Selenium WebDriver')
+    await eyes.open(driver, 'TodoMVC', 'visual-testing-at-speed selenium test')
   })
   after(async () => await eyes.close())
 
