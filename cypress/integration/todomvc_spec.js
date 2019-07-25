@@ -8,7 +8,18 @@ describe('TodoMVC - React', function () {
 
   before(function () {
     cy.visit('http://localhost:3000/')
-    cy.eyesOpen({batchName: 'visual-testing-at-speed cypress test', testName: 'sdsdf', appName: 'lalkdhlhkfs'})
+    cy.eyesOpen({batchName: 'visual-testing-at-speed cypress test', testName: 'TodoMVC', appName: 'TodoMVC',
+      browser: [
+        {width: 1024, height: 768, name: 'chrome'},
+        // {width: 400, height: 500, name: 'chrome'},
+        // {width: 1280, height: 1024, name: 'chrome'},
+        // {deviceName: 'iPhone X'},
+        // {deviceName: 'iPad Pro'},
+        // {width: 400, height: 500, name: 'firefox'},
+        // {width: 1024, height: 768, name: 'firefox'},
+        // {width: 1280, height: 1024, name: 'firefox'},
+      ]
+    })
   })
 
   after(function () {
