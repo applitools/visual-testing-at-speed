@@ -8,7 +8,7 @@ describe('TodoMVC - React', function () {
 
   before(function () {
     cy.visit('http://localhost:3000/')
-    cy.eyesOpen({batchName: 'visual-testing-at-speed cypress test'})
+    cy.eyesOpen({batchName: 'visual-testing-at-speed cypress test', testName: 'sdsdf', appName: 'lalkdhlhkfs'})
   })
 
   after(function () {
@@ -22,11 +22,12 @@ describe('TodoMVC - React', function () {
   it('should show a couple of todos correctly', () => {
     cy.get('.new-todo').type(TODO_ITEM_ONE).type('{enter}')
 
-    cy.eyesCheckWindow('One todo')
+    cy.eyesCheckWindow({tag: 'Todo list with one', sizeMode: 'selector', selector: '.todo-list'})
+    cy.eyesCheckWindow({tag: 'One todo'})
 
     cy.get('.new-todo').type(TODO_ITEM_TWO).type('{enter}')
 
-    cy.eyesCheckWindow('Two todos')
+    cy.eyesCheckWindow({tag: 'Two todos', sizeMode: 'full-page'})
 
     cy.get('.new-todo').type(TODO_ITEM_THREE).type('{enter}')
 
